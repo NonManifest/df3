@@ -22,25 +22,25 @@ client.on('message', message => {
 
 });
 
-bot.on('message', msg =>{
+client.on('message', msg =>{
     if(msg.content === "lothelp"){
         msg.reply('\n Commands: loltip, lothelp, lota, lotsys, lotupdate');
     }
 })
 
-bot.on('message', msg =>{
+client.on('message', msg =>{
     if(msg.content === "lota"){
         msg.reply('\n My creator: NonManifest \n My 2nd creators: Xenox, Bioblitz, Just Me');
     }
 })
 
-bot.on('message', msg =>{
+client.on('message', msg =>{
     if(msg.content === "lotsys"){
         msg.reply('\n My version: 00001A');
     }
 })
 
-bot.on('message', msg=>{
+client.on('message', msg=>{
     if(msg.content === "lotupdate"){
         msg.reply('\n NEW: \n +loltip [1-15] removed.\n +loltip added.\n +lothelp updated.\n +lota added. \n +lotsys added.');
     }
@@ -77,7 +77,7 @@ function randomMessage(){
     }
 }
 
-bot.on('message', (message)=>{ 
+client.on('message', (message)=>{ 
     if(message.content == "loltip"){
         message.reply(randomMessage());
     }
