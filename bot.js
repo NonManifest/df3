@@ -82,6 +82,20 @@ client.on('message', (message)=>{
         message.reply(randomMessage());
     }
 });
+
+function kaisa(){
+    var randomNumber = Math.round(Math.random()*2);
+    switch(randomNumber){
+        case 0: return 'test';
+        case 1: return 't2est';
+        case 2: return 't3est';
+    }
+}
+
+client.on('message', (message)=>{
+    if(message.content == "loltip_kaisa")
+        message.reply(kaisa());
+})
  
 
 // THIS  MUST  BE  THIS  WAY
