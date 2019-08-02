@@ -107,7 +107,7 @@ client.on('message', (message)=>{
 function zed(){
     var randomNumber = Math.round(Math.random()*9);
     switch(randomNumber){
-        case 0: return "";
+        case 0: return "Nu joci zed.. atat";
         case 1: return "";
  
     }
