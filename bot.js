@@ -89,14 +89,16 @@ function kaisa(randomizer){
     fs.readFile("temp.txt", function(err, buf) {   
          var lines = buf.toString().split('\n');
          var randomizer = lines[Math.floor(Math.random()*lines.length)];
-         
+        switch(randomizer){
+            
+        }
     });
-    
+
 }
 
 client.on('message', (message)=>{
     if(message.content == "loltip_kaisa")
-        message.reply(kaisa(randomizer));
+        message.reply(kaisa(randomizer.toString()));
 })
  
 function zed(){
