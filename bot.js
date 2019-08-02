@@ -84,11 +84,11 @@ client.on('message', (message)=>{
 });
  
 
-function kaisa(randomizer){
+function kaisa(randomNumber){
     fs.readFile("temp.txt", function(err, buf) {
         var fs = require("fs");
       var lines = buf.toString().split('\n');
-      var randomizer = lines[Math.floor(Math.random()*lines.length)];
+      var randomNumber = lines[Math.floor(Math.random()*lines.length)];
     });
 
 }
