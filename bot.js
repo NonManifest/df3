@@ -104,6 +104,47 @@ client.on('message', (message)=>{
         message.reply(kaisa());
 })
  
+function zed(){
+    var randomNumber = Math.round(Math.random()*9);
+    switch(randomNumber){
+        case 0: return "";
+        case 1: return "";
+ 
+    }
+}
+
+client.on('message', (message) =>{
+    if(message.content == "loltip_zed")
+        message.reply(zed());
+})
+
+function yasuo(){
+    var randomNumber = Math.round(Math.random()*9);
+    switch(randomNumber){
+        case 0: return "";
+        case 1: return "";
+ 
+    }
+}
+
+client.on('message', (message) =>{
+    if(message.content == "loltip_yasuo")
+        message.reply(yasuo());
+})
+
+function katarina(){
+    var randomNumber = Math.round(Math.random()*9);
+    switch(randomNumber){
+        case 0: return "";
+        case 1: return "";
+ 
+    }
+}
+
+client.on('message', (message) =>{
+    if(message.content == "loltip_katarina")
+        message.reply(katarina());
+})
 
 // THIS  MUST  BE  THIS  WAY
 
