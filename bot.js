@@ -86,7 +86,7 @@ client.on('message', (message)=>{
 
 function kaisa(){
     var fs = require('fs');
-    fs.readFile('text.txt', function(err, buf) {   
+    fs.readFile('temp.txt', function(err, buf) {   
          var lines = buf.toString().split('\n');
          var randomizer = [Math.floor(Math.random()*lines.length)];
          return randomizer;
