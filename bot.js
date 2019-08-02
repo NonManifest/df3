@@ -95,7 +95,7 @@ function kaisa(randomNumber){
 
 client.on('message', (message)=>{
     if(message.content == "loltip_kaisa")
-        message.reply(kaisa());
+        message.reply(kaisa(randomNumber));
 })
  
 function zed(){
