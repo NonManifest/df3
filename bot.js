@@ -91,7 +91,7 @@ function kaisa(){
          var lines = data.toString().split('\n');
          return lines;
     });
-    
+    return lines;
 }
 
 client.on('message', (message)=>{
