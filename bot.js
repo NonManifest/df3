@@ -84,18 +84,19 @@ client.on('message', (message)=>{
 });
  
 
-function kaisa(randomNumber){
-    fs.readFile("temp.txt", function(err, buf) {
-        var fs = require("fs");
+function kaisa(randomizer){
+    var fs = require("fs");
+    fs.readFile("temp.txt", function(err, buf) {   
          var lines = buf.toString().split('\n');
-         var randomNumber = lines[Math.floor(Math.random()*lines.length)];
+         var randomizer = lines[Math.floor(Math.random()*lines.length)];
+         
     });
     
 }
 
 client.on('message', (message)=>{
     if(message.content == "loltip_kaisa")
-        message.reply(kaisa(randomNumber));
+        message.reply(kaisa(randomizer));
 })
  
 function zed(){
