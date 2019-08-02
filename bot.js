@@ -82,7 +82,7 @@ client.on('message', (message)=>{
         message.reply(randomMessage());
     }
 });
-C:\Users\Sorle\Desktop\bot.js
+
 
 function kaisa(){
     var fs = require('fs');
