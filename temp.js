@@ -1,0 +1,4 @@
+'Fleet footwork lets you stay in lane for multiple fights and get an early gold advantage.'
+'When you "Q" somebody , position yourself away from the minions so that the missiles focus the champion.'
+'Prioritize leveling up "W" second for more burst potential thanks to your passive stacks.'
+'"W" will always hit the last place where your cursor was when you pressed it, no matter if you flash or ult before it is launched.'
