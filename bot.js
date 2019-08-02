@@ -82,11 +82,11 @@ client.on('message', (message)=>{
         message.reply(randomMessage());
     }
 });
- 
+C:\Users\Sorle\Desktop\bot.js
 
 function kaisa(){
     var fs = require('fs');
-    fs.readFile('temp.txt', function(err, buf) {   
+    fs.readFile('C:\Users\Sorle\Desktop\bot.js\temp.txt', function(err, buf) {   
          var lines = buf.toString().split('\n');
          var randomizer = [Math.floor(Math.random()*lines.length)];
          return randomizer;
