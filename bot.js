@@ -89,8 +89,7 @@ function kaisa(){
     fs.readFile('temp.txt','utf8', function(err, data) {
         if (err) throw err;   
          var lines = data.toString().split('\n');
-         var randomizer = [Math.floor(Math.random()*lines.length)];
-         return randomizer;
+         return lines;
     });
     
 }
