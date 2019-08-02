@@ -30,7 +30,7 @@ client.on('message', msg =>{
 
 client.on('message', msg =>{
     if(msg.content === "lota"){
-        msg.reply('\n My creator: NonManifest \n My 2nd creators: Xenox, Bioblitz, Just Me');
+        msg.reply('\n My creators: NonManifest and Bioblitz');
     }
 })
 
@@ -82,7 +82,7 @@ client.on('message', (message)=>{
         message.reply(randomMessage());
     }
 });
-
+ 
 function kaisa(){
     var randomNumber = Math.round(Math.random()*9);
     switch(randomNumber){
