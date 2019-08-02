@@ -85,13 +85,20 @@ client.on('message', (message)=>{
 
 
 function kaisa(){
-    var fs = require('fs');
-    fs.readFile('temp.txt','utf8', function(err, data) {
-        if (err) throw err;   
-         var lines = data.toString().split('\n');
-         return lines;
-    });
-    return lines;
+    var randomNumber = Math.round(Math.random()*9);
+    switch(randomNumber){
+        case 0: return "Fleet footwork lets you stay in lane for multiple fights and get an early gold advantage."
+        case 1: return "When you 'Q' somebody , position yourself away from the minions so that the missiles focus the champion."
+        case 2: return "Prioritize leveling up 'W' second for more burst potential thanks to your passive stacks."
+        case 3: return "'W' will always hit the last place where your cursor was when you pressed it , no matter if you flash or ult before it is launched."
+        case 4: return "Your 'E' won't help you dodge any 'point blank' skillshots at early ranks so always max it second."
+        case 5: return "Don't bother using 'E' after you have been slowed or stunned due to your slow speed."
+        case 6: return "Your ultimate can be used to either close distance with somebody that has been cc'd or hit by your 'W' or to dodge skillshots, or just use it for the shield to stay alive in 1vs1's."
+        case 7: return "Your ultimate does not escape Camille's ult, Veigar's Cage. Abilities similar to Azir's Ultimate can hit you and skills like VI's Ult follow you."
+        case 8: return "Focus upgrading your 'E' first rather than your 'Q'."
+        case 9: return "Runaan's Hurricane applies passive stacks to all enemies hit,perfect for stacked up teamfights. Watch out for crowd controls though!"
+ 
+    }
 }
 
 client.on('message', (message)=>{
