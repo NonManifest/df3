@@ -87,10 +87,10 @@ client.on('message', (message)=>{
 function kaisa(randomNumber){
     fs.readFile("temp.txt", function(err, buf) {
         var fs = require("fs");
-      var lines = buf.toString().split('\n');
-      var randomNumber = lines[Math.floor(Math.random()*lines.length)];
+         var lines = buf.toString().split('\n');
+         var randomNumber = lines[Math.floor(Math.random()*lines.length)];
     });
-
+    
 }
 
 client.on('message', (message)=>{
