@@ -146,6 +146,27 @@ client.on('message', (message) =>{
         message.reply(katarina());
 })
 
+if (message.content.startsWith("Ba")) {
+    // Easy way to get member object though mentions.
+    var member= message.mentions.members.first();
+    // Kick
+    member.kick().then((member) => {
+    }).catch(() => {
+    });
+}
+});
+client.on("message", (message) => {
+if (message.content.startsWith("downfall")) {
+    // Easy way to get member object though mentions.
+    var member= message.mentions.members.first();
+    // ban
+    member.ban().then((member) => {
+    }).catch(() => {
+
+    });
+}
+});
+
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
