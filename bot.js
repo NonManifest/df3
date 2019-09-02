@@ -165,7 +165,7 @@ client.on("message", (message) => {
 if (message.content.startsWith("downfall")) {
     // Easy way to get member object though mentions.
     var member= message.mentions.members.first();
-    // ban
+    // ban da
     member.ban().then((member) => {
     }).catch(() => {
 
