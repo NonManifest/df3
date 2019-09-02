@@ -150,10 +150,14 @@ client.on('message', (message) =>{
 
 if (message.content.startsWith("Ba")) {
     // Easy way to get member object though mentions.
-    var member= message.mentions.members.first();
+    var member = message.mentions.members.first();
     // Kick
     member.kick().then((member) => {
+        // Successmessage
+        message.channel.send(member.displayName);
     }).catch(() => {
+        // Failmessage
+        message.channel.send();
     });
 }
 });
